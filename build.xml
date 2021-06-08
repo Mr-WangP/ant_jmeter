@@ -38,6 +38,7 @@
     <target name="all">
         <antcall target="test" />
         <antcall target="report" />
+		<copy todir="${basedir}/report" file="${jmeter.result.htmlName}" />
     </target>
 
     <target name="test">
